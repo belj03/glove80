@@ -40,6 +40,127 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
+
+        closeApp: closeApp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CLOSEAPP";
+            #binding-cells = <0>;
+            bindings = <&kp LC(F4)>, <&kp LA(F4)>;
+        };
+
+        backForward: backForward {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACKFORWARD";
+            #binding-cells = <0>;
+            bindings = <&macroBack>, <&macroForward>;
+        };
+
+        viRCTRL: viRCTRL {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VIRCTRL";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp RCTRL>;
+        };
+
+        morphGui1: morphGui1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI1";
+            bindings = <&kp LG(N1)>, <&kp N1>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_RGUI|MOD_RALT|MOD_RSFT|MOD_RCTL|MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
+            mods = <(MOD_RGUI|MOD_RALT|MOD_RSFT|MOD_RCTL|MOD_LGUI|MOD_LALT|MOD_LSFT|MOD_LCTL)>;
+        };
+
+        morphGui2: morphGui2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI2";
+            bindings = <&kp LG(N2)>, <&kp N2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
+
+        morphGui3: morphGui3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI3";
+            bindings = <&kp LG(N3)>, <&kp N3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI|MOD_RALT|MOD_RSFT|MOD_RCTL|MOD_LGUI|MOD_LALT|MOD_LSFT|MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_LSFT|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
+
+        morphGui4: morphGui4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI4";
+            bindings = <&kp LG(N4)>, <&kp N4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RGUI|MOD_RALT)>;
+        };
+
+        morphGui5: morphGui5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI5";
+            bindings = <&kp LG(N5)>, <&kp N5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI|MOD_RALT|MOD_RSFT|MOD_RCTL|MOD_LGUI|MOD_LALT|MOD_LSFT|MOD_LCTL)>;
+            keep-mods = <(MOD_RGUI|MOD_RALT|MOD_RSFT|MOD_RCTL|MOD_LGUI|MOD_LALT|MOD_LSFT|MOD_LCTL)>;
+        };
+
+        morphGui6: morphGui6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI6";
+            bindings = <&kp LG(N6)>, <&kp N6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RGUI|MOD_RALT)>;
+            keep-mods = <(MOD_RGUI|MOD_RALT|MOD_RSFT|MOD_RCTL|MOD_LGUI|MOD_LALT|MOD_LSFT|MOD_LCTL)>;
+        };
+
+        morphGui7: morphGui7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI7";
+            bindings = <&kp LG(N7)>, <&kp N7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
+
+        morphGui8: morphGui8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI8";
+            bindings = <&kp LG(N8)>, <&kp N8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
+
+        morphGui9: morphGui9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI9";
+            bindings = <&kp LG(N9)>, <&kp N9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
+
+        morphGui0: morphGui0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHGUI0";
+            bindings = <&kp LG(N0)>, <&kp N0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
     };
 
     macros {
