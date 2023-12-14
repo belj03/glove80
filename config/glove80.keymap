@@ -229,6 +229,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(N1) &kp LS(TAB) &kp HOME &kp ESC>;
             label = "MACROEXPLORER";
+            wait-ms = <300>;
+            tap-ms = <100>;
         };
     };
 
